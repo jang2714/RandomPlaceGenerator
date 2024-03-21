@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--
+
+    <TextView
+        android:id="@+id/text_com"
+        android:layout_width="94dp"
+        android:layout_height="38dp"
+        android:text="공유"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"/>
+    &lt;!&ndash; 이미지 검색  !&ndash;&gt;
+
+    &lt;!&ndash; 이미지 알람  !&ndash;&gt;
+    &lt;!&ndash; 이미지들은 자바에서 onclick 속성 넣어주기 !&ndash;&gt;
+    <ImageButton
+        android:id="@+id/search_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_search"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    &lt;!&ndash; 버튼 레이아웃과 거리두기 위한 25dp line !&ndash;&gt;
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/black"
+        android:id="@+id/line1"
+
+        app:layout_constraintTop_toBottomOf="@+id/text_com"/>
+
+    &lt;!&ndash; 버튼 레이아웃 !&ndash;&gt;
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:id="@+id/btn_line1"
+        app:layout_constraintTop_toBottomOf="@+id/line1">
+
+    </LinearLayout>
+
+    &lt;!&ndash; 목록 레이아웃과 거리두기 위한 25dp line !&ndash;&gt;
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/black"
+        android:id="@+id/line2"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/btn_line1"/>
+    &lt;!&ndash; 목록 버튼 !&ndash;&gt;
+
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/place_frame"
+        app:layout_constraintTop_toBottomOf="@+id/place"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+
+        <ListView
+            android:id="@+id/place_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/place"
+        android:layout_width="102dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableRight="@drawable/ic_slidedown"
+        android:text="서울시"
+        android:elevation="8dp"
+        android:shadowColor="#80000000"
+        android:shadowRadius="4"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2"
+        />
+
+    <LinearLayout
+        android:id="@id/line3"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="9dp"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintLeft_toLeftOf="@+id/place"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/slide_down"
+        android:layout_width="102dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableRight="@drawable/ic_slidedown"
+        android:elevation="8dp"
+        android:shadowColor="#80000000"
+        android:shadowRadius="4"
+        android:text="최신순"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+
+    <FrameLayout
+        android:layout_width="110dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/list_frame"
+        app:layout_constraintTop_toBottomOf="@+id/slide_down"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+    <ListView
+        android:id="@+id/slide_down_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line3">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="찾으시는 검색 결과가 없어요."
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/text_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

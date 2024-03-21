@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 텍스트 스타일 정의 -->
+    <style name="TextAppearance.App.Title" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.App.Content" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="TitleText">
+        <item name="android:background">@drawable/title_background</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:alpha">0.7</item>
+    </style>
+</resources>

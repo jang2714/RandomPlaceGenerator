@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">우리어디가</string>
+
+    <string name="title_home">홈</string>
+    <string name="title_recommend">추천</string>
+    <string name="title_bookmark">북마크</string>
+    <string name="title_share">공유</string>
+    <string name="terms">약관</string>
+</resources>

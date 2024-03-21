@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Recommend.fragment.GyeonggiFragment">
+
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <Button
+            android:id="@+id/btnGyeonggiAll"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="경기 전체"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+
+        <Button
+            android:id="@+id/btnGyeonggiGapyeong"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="가평군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiGoyang"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="고양시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiGwacheon"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="과천시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiGwangmyeong"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="광명시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiGwangju"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="광주시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiGuri"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="구리시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiGunpo"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="군포시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiGimpo"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="김포시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiNamyangju"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="남양주시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiDongducheon"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="동두천시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiBucheon"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="부천시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiSeongnam"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="성남시"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/btnGyeonggiSuwon"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="수원시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiSiheung"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="시흥시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiAnsan"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="안산시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@+id/layout1"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/btnGyeonggiAnseong"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="안성시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiAnyang"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="안양시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiYangju"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="양주시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiYangpyeong"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="양평군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiYeoju"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="여주시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiYeoncheon"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="연천군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiOsan"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="오산시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiYongin"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="용인시"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/btnGyeonggiUiwang"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="의왕시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiUijeongbu"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="의정부시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiIcheon"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="이천시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiPaju"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="파주시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiPyeongtaek"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="평택시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiPocheon"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="포천시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiHanam"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="하남시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnGyeonggiHwaseong"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="화성시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

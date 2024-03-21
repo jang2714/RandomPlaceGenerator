@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Home.activity.HomeSearchActivity">
+
+    <!-- Your other layout components -->
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:queryHint="Search"
+        android:iconifiedByDefault="false" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:text="최근 검색 기록"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp" />
+
+    <!-- Rest of your layout components -->
+
+</LinearLayout>

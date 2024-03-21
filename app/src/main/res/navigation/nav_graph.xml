@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/navigation_home"
+    android:id="@+id/nav_graph">
+
+    <!-- 홈 -->
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.mobileproject.Home.fragment.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <!-- 추천 -->
+    <fragment
+        android:id="@+id/navigation_recommend"
+        android:name="com.example.mobileproject.Recommend.fragment.RecommendFragment"
+        android:label="@string/title_recommend"
+        tools:layout="@layout/fragment_recommend" />
+
+    <!-- 북마크 -->
+    <fragment
+        android:id="@+id/navigation_bookmark"
+        android:name="com.example.mobileproject.Bookmark.BookmarkFragment"
+        android:label="@string/title_bookmark"
+        tools:layout="@layout/fragment_bookmark">
+        <action
+            android:id="@+id/action_bookmark_place"
+            app:destination="@id/navigation_bookmark_place" />
+        <action
+            android:id="@+id/action_bookmark_course"
+            app:destination="@id/navigation_bookmark_course" />
+    </fragment>
+
+    <!-- 북마크 (장소) -->
+    <fragment
+        android:id="@+id/navigation_bookmark_place"
+        android:name="com.example.mobileproject.Bookmark.place.BookmarkPlaceFragment"
+        android:label="@string/title_bookmark"
+        tools:layout="@layout/bookmark_place_view" />
+
+    <!-- 북마크 (코스) -->
+    <fragment
+        android:id="@+id/navigation_bookmark_course"
+        android:name="com.example.mobileproject.Bookmark.course.BookmarkCourseFragment"
+        android:label="@string/title_bookmark"
+        tools:layout="@layout/bookmark_course_view" />
+
+
+
+    <!-- 공유 -->
+    <fragment
+        android:id="@+id/navigation_share"
+        android:name="com.example.mobileproject.Share.fragment.ShareFragment"
+        android:label="@string/title_share"
+        tools:layout="@layout/fragment_share" />
+</navigation>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Recommend.fragment.JeonbukFragment">
+
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <Button
+            android:id="@+id/btnJeonbukAll"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="전북 전체"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonbukGochang"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="고창군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonbukGunsan"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="군산시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonbukGimje"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="김제시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonbukNamwon"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="남원시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonbukMuju"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="무주군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonbukBuan"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="부안군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonbukSunchang"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="순창군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@+id/layout1"
+        app:layout_constraintTop_toTopOf="parent">
+        <Button
+            android:id="@+id/btnJeonbukWanju"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="완주군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonbukIksan"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="익산시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonbukImsil"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="임실군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonbukJangsu"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="장수군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonbukJeonju"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="전주시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonbukJeongeup"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="정읍시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonbukJinan"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="진안군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

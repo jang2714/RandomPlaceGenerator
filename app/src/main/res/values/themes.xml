@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 테마 -->
+    <style name="Theme.MobileProject" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimaryDark">@color/blue3</item>
+        <item name="colorPrimary">@color/blue3</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:textColor">#000000</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+        <item name="colorControlNormal">#000000</item>
+
+    </style>
+
+
+
+    <style name="Theme.MobileProject.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="BoxedEditText">
+        <item name="android:background">@drawable/edittext_box_background</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="Theme.MobileProject.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MobileProject.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

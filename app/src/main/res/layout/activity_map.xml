@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--    <WebView-->
+<!--        android:id="@+id/webView"-->
+<!--        android:layout_width="357dp"-->
+<!--        android:layout_height="560dp"-->
+<!--        android:layout_marginTop="59dp"-->
+<!--        android:layout_marginLeft="25dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"/>-->
+
+
+    <RelativeLayout
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btnCosRecommend"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_course_create"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnCosCreate"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_course_recommend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnCosRecommend" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+
+
+        <Button
+            android:id="@+id/btnKaAll"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="전체"
+            android:textColor="#83C5F4"
+            android:backgroundTint="#E6E6E6"
+            android:background="#00ff0000"
+            android:layout_marginTop="3dp"
+            />
+        <Button
+            android:id="@+id/btnKaRestaurant"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="음식점"
+            android:textColor="#000000"
+            android:backgroundTint="#E6E6E6"
+            android:background="#00ff0000"
+            android:layout_marginTop="3dp"
+            />
+        <Button
+            android:id="@+id/btnKaCafe"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="카페"
+            android:textColor="#000000"
+            android:backgroundTint="#E6E6E6"
+            android:background="#00ff0000"
+            android:layout_marginTop="3dp"
+            />
+        <Button
+            android:id="@+id/btnKaCultare"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="문화생활"
+            android:textColor="#000000"
+            android:backgroundTint="#E6E6E6"
+            android:background="#00ff0000"
+            android:layout_marginTop="3dp"
+            />
+        <Button
+            android:id="@+id/btnKaPark"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="공원"
+            android:textColor="#000000"
+            android:backgroundTint="#E6E6E6"
+            android:background="#00ff0000"
+            android:layout_marginTop="3dp"
+            />
+        <Button
+            android:id="@+id/btnKaPlay"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="놀거리"
+            android:textColor="#000000"
+            android:backgroundTint="#E6E6E6"
+            android:background="#00ff0000"
+            android:layout_marginTop="3dp"
+            />
+        <!--        <Button-->
+        <!--            android:id="@+id/btnKaShopping"-->
+        <!--            android:layout_width="70dp"-->
+        <!--            android:layout_height="35dp"-->
+        <!--            android:text="쇼핑"-->
+        <!--            android:textColor="#000000"-->
+        <!--            android:backgroundTint="#E6E6E6"-->
+        <!--            android:background="#00ff0000"-->
+        <!--            android:layout_margin="3dp"-->
+        <!--            />-->
+        <!--        <Button-->
+        <!--            android:id="@+id/btnKaVacation"-->
+        <!--            android:layout_width="70dp"-->
+        <!--            android:layout_height="35dp"-->
+        <!--            android:text="휴양지"-->
+        <!--            android:textColor="#000000"-->
+        <!--            android:backgroundTint="#E6E6E6"-->
+        <!--            android:background="#00ff0000"-->
+        <!--            android:layout_margin="3dp"-->
+        <!--            />-->
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listViewPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarSize="5dp"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            android:scrollbars="vertical"
+            tools:itemCount="3"
+            tools:listitem="@layout/bookmark_place_list" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    <!--TODO. 카테고리 추가 07.06-->

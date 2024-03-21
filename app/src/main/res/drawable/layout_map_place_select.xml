@@ -1,0 +1,3 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#DEF1FF" /> <!-- 배경 색상 -->
+</shape>

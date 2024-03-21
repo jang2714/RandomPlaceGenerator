@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="28dp"
+        android:gravity="center"
+        android:text="이메일"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:hint="이메일 입력"
+        android:padding="10dp"
+        android:textColorHint="#B4AFAF"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/text_id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_checkId"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_checkid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/et_id"
+        app:layout_constraintTop_toTopOf="@+id/et_id" />
+
+    <TextView
+        android:id="@+id/text_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="비밀번호"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/et_id"
+        app:layout_constraintTop_toBottomOf="@id/text_id"
+        android:layout_marginTop="26dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        app:layout_constraintLeft_toRightOf="@+id/text_id"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_id"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:layout_marginTop="25dp"
+        android:hint="비밀번호 입력"
+        android:inputType="textPassword"
+        android:textSize="15dp"
+        android:textColorHint="#B4AFAF"/>
+    <EditText
+        android:id="@+id/et_retryPassword"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        app:layout_constraintLeft_toRightOf="@+id/text_id"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:layout_marginTop="25dp"
+        android:hint="비밀번호 재입력"
+        android:inputType="textPassword"
+        android:textSize="15dp"
+        android:textColorHint="#B4AFAF"/>
+
+    <TextView
+        android:id="@+id/text_phoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="휴대폰 번호"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/et_id"
+        app:layout_constraintTop_toBottomOf="@id/et_retryPassword"
+        android:layout_marginTop="26dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/et_phoneNumber"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        app:layout_constraintLeft_toRightOf="@+id/text_id"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_retryPassword"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:layout_marginTop="25dp"
+        android:hint="휴대폰 번호 입력"
+        android:textSize="15dp"
+        android:textColorHint="#B4AFAF"/>
+
+    <TextView
+        android:id="@+id/text_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="닉네임"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/et_id"
+        app:layout_constraintTop_toBottomOf="@id/et_phoneNumber"
+        android:layout_marginTop="26dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/et_nickname"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        app:layout_constraintLeft_toRightOf="@+id/text_id"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_phoneNumber"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:layout_marginTop="25dp"
+        android:hint="닉네임 입력"
+        android:textSize="15dp"
+        android:textColorHint="#B4AFAF"/>
+
+    <TextView
+        android:id="@+id/text_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="비밀번호 힌트"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/et_id"
+        app:layout_constraintTop_toBottomOf="@id/et_nickname"
+        android:layout_marginTop="26dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/et_hint"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        app:layout_constraintLeft_toRightOf="@+id/text_id"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nickname"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:layout_marginTop="25dp"
+        android:hint="힌트 질문 입력"
+        android:textSize="15dp"
+        android:textColorHint="#B4AFAF"/>
+
+    <TextView
+        android:id="@+id/text_hint_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="힌트 답변"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/et_id"
+        app:layout_constraintTop_toBottomOf="@id/et_hint"
+        android:layout_marginTop="26dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/et_hintAnswer"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        app:layout_constraintLeft_toRightOf="@+id/text_id"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_hint"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:layout_marginTop="25dp"
+        android:hint="힌트 답변 입력"
+        android:textSize="15dp"
+        android:textColorHint="#B4AFAF"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="@string/terms"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_hintAnswer"
+        android:layout_marginTop="25dp"/>
+
+    <ImageButton
+        android:id="@+id/btn_registerOK"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_join"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

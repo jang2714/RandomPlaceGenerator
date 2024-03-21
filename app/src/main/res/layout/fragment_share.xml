@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/forum_frame"/>
+
+    <!-- 버튼 레이아웃과 거리두기 위한 25dp line !-->
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:background="@color/black"
+      android:id="@+id/line1"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <!-- 버튼 레이아웃 !-->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:orientation="horizontal"
+      android:id="@+id/btn_line1"
+      app:layout_constraintTop_toBottomOf="@+id/line1">
+
+  </LinearLayout>
+
+  <!-- 목록 레이아웃과 거리두기 위한 25dp line !-->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:background="@color/black"
+      android:id="@+id/line2"
+      android:orientation="vertical"
+      app:layout_constraintTop_toBottomOf="@+id/btn_line1"/>
+  <!-- 목록 버튼 !-->
+
+
+ <FrameLayout
+     android:layout_width="120dp"
+     android:layout_height="300dp"
+     android:layout_marginLeft="10dp"
+     android:id="@+id/place_frame"
+     app:layout_constraintTop_toBottomOf="@+id/place"
+     app:layout_constraintLeft_toLeftOf="parent"
+     >
+
+   <ListView
+       android:id="@+id/place_list"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="0dp"
+       android:layout_marginBottom="8dp"
+       android:visibility="gone" />
+
+ </FrameLayout>
+
+    <Button
+        android:id="@+id/place"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableRight="@drawable/btn_slidedown"
+        android:text="서울시"
+
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_line"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/img_line"
+        app:layout_constraintTop_toBottomOf="@+id/place"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+          android:id="@+id/slide_down"
+          android:layout_width="130dp"
+          android:layout_height="45dp"
+          android:layout_marginLeft="10dp"
+          android:backgroundTint="#FFFFFF"
+          android:drawableRight="@drawable/btn_slidedown"
+          android:text="최신순"
+          android:textColor="@color/black"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+
+  <FrameLayout
+      android:layout_width="110dp"
+      android:layout_height="200dp"
+      android:layout_marginLeft="10dp"
+      android:id="@+id/list_frame"
+      app:layout_constraintTop_toBottomOf="@+id/slide_down"
+      app:layout_constraintRight_toRightOf="parent">
+
+
+    <ListView
+        android:id="@+id/slide_down_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+  </FrameLayout>
+
+<!--
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_line">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/text_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+-->
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_line">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:id="@+id/ll_bp1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+                <!-- 이미지 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="140dp"
+                    app:cardCornerRadius="10dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:id="@+id/iv_image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_place1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            style="@style/TitleText"
+                            android:layout_gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/item_title"
+                                android:layout_width="130dp"
+                                android:layout_height="match_parent"
+                                android:text="천안 코스모스"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="9dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_good" />
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="3"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="13dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/ic_bookmark" />
+
+                            <TextView
+                                android:layout_width="40dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="10"
+                                android:textColor="@color/white"
+
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="11dp"
+                                android:layout_marginTop="1dp"
+                                android:src="@drawable/ic_eye" />
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bp2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+                <!-- 이미지 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="140dp"
+                    app:cardCornerRadius="10dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:id="@+id/iv_image2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_place2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            style="@style/TitleText"
+                            android:layout_gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="match_parent"
+                                android:text="성수동 데이트"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="9dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_good" />
+
+                            <TextView
+                                android:id="@+id/count_commend"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="13dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/ic_bookmark" />
+
+                            <TextView
+                                android:id="@+id/count_bookmark"
+                                android:layout_width="40dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="0"
+                                android:textColor="@color/white"
+
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="11dp"
+                                android:layout_marginTop="1dp"
+                                android:src="@drawable/ic_eye" />
+
+                            <TextView
+                                android:id="@+id/count_see"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bp3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+                <!-- 이미지 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="140dp"
+                    app:cardCornerRadius="10dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:id="@+id/iv_image3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_place3" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            style="@style/TitleText"
+                            android:layout_gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="match_parent"
+                                android:text="연남 데이트"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="9dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_good" />
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="11"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="13dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/ic_bookmark" />
+
+                            <TextView
+                                android:layout_width="40dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="7"
+                                android:textColor="@color/white"
+
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="11dp"
+                                android:layout_marginTop="1dp"
+                                android:src="@drawable/ic_eye" />
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:text="20"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bp4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+                <!-- 이미지 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="140dp"
+                    app:cardCornerRadius="10dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:id="@+id/iv_image4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/course_info_img1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            style="@style/TitleText"
+                            android:layout_gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="match_parent"
+                                android:text="강서구 코스"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="9dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_good" />
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="78"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="13dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/ic_bookmark" />
+
+                            <TextView
+                                android:layout_width="40dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="172"
+                                android:textColor="@color/white"
+
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="11dp"
+                                android:layout_marginTop="1dp"
+                                android:src="@drawable/ic_eye" />
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:text="241"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/temp_btn"
+        android:layout_width="400dp"
+        android:layout_height="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

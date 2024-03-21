@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Recommend.fragment.JeonnamFragment">
+
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <Button
+            android:id="@+id/btnJeonnamAll"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="전남 전체"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/btnJeonnamGangjin"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="강진군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamGohung"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="고흥군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamGokseong"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="곡성군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamGwangyang"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="광양시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamGurye"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="구례군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamNaju"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="나주시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamDamyang"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="담양군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamMokpo"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="목포시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamMuan"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="무안군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamBoseong"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="보성군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamSuncheon"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="순천시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@+id/layout1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnJeonnamSinan"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="신안군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamYeosu"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="여수시"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamYeonggwang"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="영광군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamYeongam"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="영암군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamWando"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="완도군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamJangseong"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="장성군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamJangheung"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="장흥군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamJindo"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="진도군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamHamyang"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="함양군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamHaenam"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="해남군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnJeonnamHwasun"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="화순군"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

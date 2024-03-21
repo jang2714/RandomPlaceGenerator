@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarSize="5dp"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            android:scrollbars="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="4dp"
+            android:id="@+id/listViewCos"/>
+
+        -->
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp">
+<!--
+
+                        <LinearLayout
+                            android:id="@+id/ll_bp1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical">
+                                &lt;!&ndash; 이미지 &ndash;&gt;
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="370dp"
+                                    android:layout_height="140dp"
+                                    app:cardCornerRadius="10dp">
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:clickable="true"
+                                            android:focusable="true">
+
+                                                <ImageView
+                                                    android:id="@+id/iv_image1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@drawable/img_place1" />
+
+                                                <LinearLayout
+                                                    style="@style/TitleText"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="35dp"
+                                                    android:layout_gravity="bottom"
+                                                    android:orientation="horizontal">
+
+                                                        <TextView
+                                                            android:id="@+id/item_title"
+                                                            android:layout_width="130dp"
+                                                            android:layout_height="match_parent"
+                                                            android:text="천안 코스모스"
+                                                            android:textColor="@color/white"
+                                                            android:textSize="14sp" />
+
+
+                                                </LinearLayout>
+
+                                        </FrameLayout>
+                                </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+-->
+
+                        <LinearLayout
+                            android:id="@+id/ll_bp2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical">
+                                <!-- 이미지 -->
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="370dp"
+                                    android:layout_height="140dp"
+                                    app:cardCornerRadius="10dp">
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:clickable="true"
+                                            android:focusable="true">
+
+                                                <ImageView
+                                                    android:id="@+id/iv_image2"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@drawable/img_place2" />
+
+                                                <LinearLayout
+                                                    style="@style/TitleText"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="35dp"
+                                                    android:layout_gravity="bottom"
+                                                    android:orientation="horizontal">
+
+                                                        <TextView
+                                                            android:layout_width="130dp"
+                                                            android:layout_height="match_parent"
+                                                            android:text="성수동 데이트"
+                                                            android:textColor="@color/white"
+                                                            android:textSize="14sp" />
+
+                                                </LinearLayout>
+
+                                        </FrameLayout>
+                                </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_bp3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical">
+                                <!-- 이미지 -->
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="370dp"
+                                    android:layout_height="140dp"
+                                    app:cardCornerRadius="10dp">
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:clickable="true"
+                                            android:focusable="true">
+
+                                                <ImageView
+                                                    android:id="@+id/iv_image3"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@drawable/img_place3" />
+
+                                                <LinearLayout
+                                                    style="@style/TitleText"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="35dp"
+                                                    android:layout_gravity="bottom"
+                                                    android:orientation="horizontal">
+
+                                                        <TextView
+                                                            android:layout_width="130dp"
+                                                            android:layout_height="match_parent"
+                                                            android:text="연남 데이트"
+                                                            android:textColor="@color/white"
+                                                            android:textSize="14sp" />
+
+                                                </LinearLayout>
+
+                                        </FrameLayout>
+                                </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_bp4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical">
+                                <!-- 이미지 -->
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="370dp"
+                                    android:layout_height="140dp"
+                                    app:cardCornerRadius="10dp">
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:clickable="true"
+                                            android:focusable="true">
+
+                                                <ImageView
+                                                    android:id="@+id/iv_image4"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@drawable/img_place4" />
+
+                                                <LinearLayout
+                                                    style="@style/TitleText"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="35dp"
+                                                    android:layout_gravity="bottom"
+                                                    android:orientation="horizontal">
+
+                                                        <TextView
+                                                            android:layout_width="130dp"
+                                                            android:layout_height="match_parent"
+                                                            android:text="장기동 해일코스"
+                                                            android:textColor="@color/white"
+                                                            android:textSize="14sp" />
+
+                                                </LinearLayout>
+
+                                        </FrameLayout>
+                                </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+
+                </LinearLayout>
+        </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

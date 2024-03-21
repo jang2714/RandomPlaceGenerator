@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:id="@+id/region1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_seoul"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="clickHandler"
+                android:text="서울"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_busan"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="clickHandler"
+                android:text="부산"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_incheon"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="clickHandler"
+                android:text="인천"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_daegu"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="clickHandler"
+                android:text="대구"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_gwangju"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="clickHandler"
+                android:text="광주"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_daejeon"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="clickHandler"
+                android:text="대전"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_ulsan"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="clickHandler"
+                android:text="울산"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_gyeonggi"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="clickHandler"
+                android:text="경기"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_gangwon"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="clickHandler"
+                android:text="강원"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_chungbuk"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="clickHandler"
+                android:text="충북"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_chungnam"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="clickHandler"
+                android:text="충남"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_jeonbuk"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="clickHandler"
+                android:text="전북"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_jeonnam"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="clickHandler"
+                android:text="전남"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_gyeongbuk"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="clickHandler"
+                android:text="경북"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_gyeongnam"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="clickHandler"
+                android:text="경남"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_jeju"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="clickHandler"
+                android:text="제주"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_sejong"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="clickHandler"
+                android:text="세종"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/region2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/region1"
+        app:layout_constraintTop_toTopOf="@+id/region1">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

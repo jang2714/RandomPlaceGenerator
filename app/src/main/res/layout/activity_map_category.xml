@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bookmark.map.mapCourseCategoryActivity">
+
+
+    <ImageButton
+        android:id="@+id/btnMapCategory1"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_place_restaurant"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnMapCategory2"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_place_cafe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnMapCategory1" />
+
+    <ImageButton
+        android:id="@+id/btnMapCategory3"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_place_walk"
+        app:layout_constraintStart_toStartOf="@+id/btnMapCategory1"
+        app:layout_constraintTop_toBottomOf="@+id/btnMapCategory1" />
+
+    <ImageButton
+        android:id="@+id/btnMapCategory4"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_place_culture"
+        app:layout_constraintEnd_toEndOf="@+id/btnMapCategory2"
+        app:layout_constraintTop_toTopOf="@+id/btnMapCategory3" />
+
+    <ImageButton
+        android:id="@+id/btnMapCategory5"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/btn_place_shopping"
+        app:layout_constraintStart_toStartOf="@+id/btnMapCategory3"
+        app:layout_constraintTop_toBottomOf="@+id/btnMapCategory3" />
+
+    <ImageButton
+        android:id="@+id/btnMapCategory6"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_place_play"
+        app:layout_constraintEnd_toEndOf="@+id/btnMapCategory4"
+        app:layout_constraintTop_toTopOf="@+id/btnMapCategory5" />
+
+    <ImageButton
+        android:id="@+id/btnMapCategory7"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_place_tour"
+        app:layout_constraintStart_toStartOf="@+id/btnMapCategory5"
+        app:layout_constraintTop_toBottomOf="@+id/btnMapCategory5" />
+
+    <ImageButton
+        android:id="@+id/btnMapCategory8"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_place_stay"
+        app:layout_constraintEnd_toEndOf="@+id/btnMapCategory6"
+        app:layout_constraintTop_toTopOf="@+id/btnMapCategory7" />
+
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/img_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMapCategory7" />
+
+
+
+    <ImageButton
+        android:id="@+id/mapCancel"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="36dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_cancel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+    <ImageButton
+        android:id="@+id/mapNext"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <!-- TODO 카테고리 아이콘 height 확인 후 수정 -->
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="175dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMap"
+            android:layout_width="314dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarSize="5dp"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

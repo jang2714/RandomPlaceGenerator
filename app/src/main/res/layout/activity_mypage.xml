@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/img_sheep" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="귀여운양춘식"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+
+    <Button
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity=""
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/img_heart"
+        android:drawableRight="@drawable/mypage_btn2"
+        android:drawablePadding="10dp"
+        android:text="나의 장소" />
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity=""
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/img_mypage_map"
+        android:drawableRight="@drawable/mypage_btn2"
+        android:drawablePadding="10dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="최근 장소"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity=""
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/img_share2"
+        android:drawableRight="@drawable/mypage_btn2"
+        android:drawablePadding="10dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="나의 공유"/>
+
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity=""
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/img_ask"
+        android:drawableRight="@drawable/mypage_btn2"
+        android:drawablePadding="10dp"
+        android:text="1:1 문의하기" />
+
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity=""
+        android:drawableLeft="@drawable/img_wonder"
+        android:drawableRight="@drawable/mypage_btn2"
+        android:drawablePadding="10dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="자주 묻는 질문"/>
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/img_logout"
+        android:drawableRight="@drawable/mypage_btn2"
+        android:drawablePadding="10dp"
+        android:gravity=""
+        android:text="로그아웃"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

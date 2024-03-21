@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mobileproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MobileProject"
+        tools:targetApi="31">
+
+        <!-- 로그인 -->
+        <activity
+            android:name=".Login.activity.IntroActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.activity.ResetPasswordActivity" />
+        <activity android:name=".Login.activity.HintAnswerActivity"/>
+        <activity android:name=".Login.activity.InputIdActivity" />
+        <activity android:name=".Login.activity.FindIdResultActivity"/>
+        <activity android:name=".Login.activity.FindIdActivity" />
+        <activity android:name=".Login.activity.RegisterActivity"/>
+        <activity android:name=".Login.activity.LoginActivity"  android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <!-- 홈 -->
+        <activity android:name=".Home.activity.AlarmActivity"/>
+        <activity android:name=".Home.activity.BestPlaceActivity"/>
+        <activity android:name=".Home.activity.HomeSearchActivity" />
+        <activity android:name=".Home.activity.MainActivity"/>
+        <activity android:name=".Home.activity.MapActivity"/>
+        <activity android:name=".Home.activity.MyPageActivity" />
+        <activity android:name=".Home.activity.ShareSearchActivity" />
+
+        <!-- 장소, 코스 상세 정보 -->
+        <activity android:name=".Home.activity.PlaceInfoActivity" />
+        <activity android:name=".Home.activity.CourseInfoActivity" />
+        <activity android:name=".Home.activity.CourseInfoActivity2" />
+        <activity android:name=".Home.activity.CourseInfoActivity3" />
+
+        <!-- 추천 -->
+        <activity android:name=".Recommend.activitiy.RecommendActivity1" />
+        <activity android:name=".Recommend.activitiy.RecommendActivity2" />
+        <activity android:name=".Recommend.activitiy.RecommendActivity3" />
+
+        <!-- 북마크 -->
+        <activity android:name=".Bookmark.map.mapCoursePlaceActivity"/>
+        <activity android:name=".Bookmark.map.mapRecommendMadedActivity"/>
+        <activity android:name=".Bookmark.map.mapActivity"/>
+        <activity android:name=".Bookmark.map.mapSelfActivity"/>
+        <activity android:name=".Bookmark.map.mapCourseCategoryActivity"/>
+        <activity android:name=".Bookmark.map.mapNavigationActivity"/>
+        <activity android:name=".Bookmark.map.mapRecommendActivity"/>
+
+        <!-- 공유 -->
+        <activity android:name=".Share.activity.ShareSearchActivity" />
+        <activity android:name=".Share.activity.DetailPlaceActivity" />
+
+        <!-- 카카오맵 네이티브 앱 키 -->
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="d277d528ccf0ddfecd59256a815f4464" />
+
+    </application>
+
+</manifest>

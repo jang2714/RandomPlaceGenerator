@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_tab_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_recommend"
+        android:icon="@drawable/ic_tab_recommend"
+        android:title="@string/title_recommend" />
+
+    <item
+        android:id="@+id/navigation_bookmark"
+        android:icon="@drawable/ic_tab_bookmark"
+        android:title="@string/title_bookmark" />
+
+    <item
+        android:id="@+id/navigation_share"
+        android:icon="@drawable/ic_tab_share"
+        android:title="@string/title_share" />
+</menu>
